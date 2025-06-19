@@ -1,89 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SheCodes Plus</title>
-    <style>
-      h1 {
-        color: white;
-      }
-      span {
-        color: darkorange;
-      }
-      button {
-        background-color: darkorange;
-      }
-      section {
-        background-color: darkorchid;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div>
-        <img src="img/logo.png" alt="SheCodes" width="200" height="100" />
-        <nav>Coders Mentors Partners Blog Contact</nav>
-      </div>
-    </header>
-    <section>
-      <h1>
-        A <span>movement</span>
-        devoted to helping
-      </h1>
-      <h1>women learn tech skills.</h1>
-      <button>Start Learning</button>
-    </section>
-    <section>
-      <h3>
-        <img src="img/tools.svg" alt="tools" width="20" height="20" />
-        <div>1 Day Workshops</div>
-      </h3>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>SheCodes Plus</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img src="img/logo.png" alt="SheCodes" class="logo" />
+      <button type="button" class="hamburger-button">
+        <img class="hamburger-icon" src="./img/hamburger.svg" alt="Menu">
+      </button>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Coders</a></li>
+        <li><a href="#">Mentors</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="#">Coders</a></li>
+        <li><a href="#">Mentors</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>
+      A <span class="hero-accent">movement</span> devoted
+      to helping women learn tech skills.
+    </h1>
+    <a href="#" class="btn-primary">Start Learning</a>
+  </section>
+
+  <section class="articles-container">
+    <article>
+      <img src="img/tools.svg" alt="tools" class="icon" />
+      <h2>1 Day Workshops</h2>
       <p>
         Whether you're interested in coding as a career, or just looking to see
         what it's all about, our free one day workshops are the perfect starting
         point.
       </p>
-      <button>Apply</button>
-    </section>
-    <h3>
-      <img src="img/lightning.svg" alt="lightning" width="20" height="20" />
-      <div>1 Week Flash</div>
-    </h3>
-    <p>
-      Discover the fundamentals of tech in just one week. Flash is a one week
-      taster program, aimed at teaching you the basics of the key emerging
-      fields in tech.
-    </p>
-    <button>Apply</button>
-    <h3>
-      <img src="img/plus.svg" alt="plus" width="20" height="20" />
-      <div>6 Month Plus</div>
-    </h3>
-    <p>
-      She Codes Plus is a program providing an alternate pathway within tech.
-      The Plus program is perfect for you if your desire is to enter a tech
-      career.
-    </p>
-    <button>Apply</button>
+      <a href="#" class="btn-primary">Apply</a>
+    </article>
+    <article>
+      <img src="img/lightning.svg" alt="lightning" class="icon" />
+      <h2>1 Week Flash</h2>
+      <p>
+        Discover the fundamentals of tech in just one week. Flash is a one week
+        taster program, aimed at teaching you the basics of the key emerging
+        fields in tech.
+      </p>
+      <a href="#" class="btn-primary">Apply</a>
+    </article>
+    <article>
+      <img src="img/plus.svg" alt="plus" class="icon" />
+      <h2>6 Month Plus</h2>
+      <p>
+        She Codes Plus is a program providing an alternate pathway within tech.
+        The Plus program is perfect for you if your desire is to enter a tech
+        career.
+      </p>
+      <a href="#" class="btn-primary">Apply</a>
+    </article>
+  </section>
+
+  <section class="contact-form">
     <h2>Get in touch</h2>
-    <form action="">
-      <label for="YourName">Your Name</label><br />
-      <input type="text" /><br />
-      <label for="">Your City</label><br />
-      <select name="City" id="City">
+    <form>
+      <label for="your-name">Your Name</label>
+      <input type="text" />
+      <label for="city">Your City</label>
+      <select name="city-selection" id="city">
         <option value="Brisbane">Brisbane</option>
         <option value="Perth">Perth</option>
-        <option value="TheMoon">The Moon</option></select
-      ><br />
-      <label for="">Your Message</label><br />
-      <input type="text" /><br />
+        <option value="The-Moon">The Moon</option>
+      </select>
+      <label for="message">Your Message</label>
+      <textarea type="message-text" id="message" rows="10"></textarea>
+      <input type="submit" value="Submit">
     </form>
-    <button>Submit</button>
-    <footer>
-      <img src="img/instagram.svg" alt="instagram" width="40" height="40" />
-      <img src="img/slack.svg" alt="slack" width="40" height="40" />
-      <img src="img/github.svg" alt="github" width="40" height="40" />
-    </footer>
-  </body>
+  </section>
+  <footer>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/instagram.svg" alt="instagram" class="socials-icon"> </a>
+        </li>
+        <li>
+          <a href="#"><img src="img/slack.svg" alt="instagram" class="socials-icon"></a>
+        </li>
+        <li><a href="#"><img src="img/github.svg" alt="instagram" class="socials-icon"></a></li>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
 </html>
